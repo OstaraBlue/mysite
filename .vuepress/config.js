@@ -45,12 +45,5 @@ module.exports = {
         ]
 
     },
-    configureWebpack: {
-        resolve: {
-            alias: {
-                '@alias': '../assets',
-                '@alias_Home': './assets'
-            }
-        }
-    }
+
 }

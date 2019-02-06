@@ -1,10 +1,10 @@
 module.exports = {
-    title: "VuePress Deploy",
+    title: "OstaraBlue",
     locales: {
         '/': {
             lang: 'de-DE',
             title: 'VuePress Deploy',
-            description: 'Vuepress with Netlify Deploy Button'
+            description: 'My own little description'
         }
     },
     head: [
@@ -21,36 +21,20 @@ module.exports = {
     ],
     serviceWorker: true,
     themeConfig: {
-        docsDir: 'docs',
-        repo: 'capriosa/vuepress-deploy',
+
+        repo: 'OstaraBlue/mysite',
 
         nav: [{
-                text: 'Start',
-                link: '/docs/',
-            },
-            {
-                text: 'Admin',
-                link: '/admin',
-            },
-            {
-                text: 'NetlifyCMS Config Help',
-                link: '/docs/netlifycms-configuration.html',
-
-            },
-
-            {   text: 'Blog',
-                link: '/blog/'
-             }
+                text: 'Home',
+                link: '/',
+            }
+            // {
+            //     text: 'Admin',
+            //     link: '/admin',
+            // },
+            
 
         ]
 
-    },
-    configureWebpack: {
-        resolve: {
-            alias: {
-                '@alias': '../assets',
-                '@alias_Home': './assets'
-            }
-        }
     }
 }

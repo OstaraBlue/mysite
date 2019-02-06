@@ -1,18 +1,20 @@
 backend:
   name: github
-  repo: capriosa/vuepress-deploy
+  repo: OstaraBlue/mysite
   branch: master
 
 public_folder: ".vuepress/dist/"
 media_folder: ".vuepress/dist/assets/img"
 
 collections:
-  - name: "doc"
-    label: "Doc"
-    folder: "docs"
+  - name: "Blog"
+    label: "Post"
+    folder: "blog"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Description" name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 

@@ -36,11 +36,5 @@ module.exports = {
 
         ]
 
-<<<<<<< HEAD
     }
 }
-=======
-    },
-
-}
->>>>>>> 29c5b08caad545c01761b78ae168615bdd7bc9c0
